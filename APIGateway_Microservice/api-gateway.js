@@ -104,7 +104,7 @@ app.use("/admin",
 verifyToken,
 checkRole("admin"),
 createProxyMiddleware({
-    target:"http://localhost:5004",
+    target:"http://52.207.23.225:5004",
     changeOrigin:true,
     on:{
         proxyReq:fixRequestBody
@@ -119,7 +119,7 @@ app.use("/user",
 verifyToken,
 checkRole("user"),
 createProxyMiddleware({
-    target:"http://localhost:5003",
+    target:"http://54.221.162.139:5003",
     changeOrigin:true,
     on:{
         proxyReq:fixRequestBody
